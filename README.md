@@ -1,52 +1,52 @@
 # Async File Downloader
 
-一個基於 Python 非同步（async）的文件下載器，支持並發下載、進度顯示、錯誤重試等功能。
+A Python-based asynchronous file downloader that supports concurrent downloads, progress display, error retry, and more features.
 
-## 功能特點
+## Features
 
-- 非同步並發下載
-- 實時進度顯示
-- 自動重試機制
-- 文件大小驗證
-- 詳細的日誌記錄
-- 可配置的下載參數
+- Asynchronous concurrent downloads
+- Real-time progress display
+- Automatic retry mechanism
+- File size validation
+- Detailed logging
+- Configurable download parameters
 
-## 環境需求
+## Requirements
 
-- Python 3.8 或更高版本
-- 虛擬環境（推薦使用 venv）
+- Python 3.8 or higher
+- Virtual environment (venv recommended)
 
-## 快速開始
+## Quick Start
 
-### 1. 克隆專案
+### 1. Clone the Project
 
 ```bash
 git clone <your-repository-url>
 cd test_download
 ```
 
-### 2. 創建並啟動虛擬環境
+### 2. Create and Activate Virtual Environment
 
 ```bash
-# 創建虛擬環境
+# Create virtual environment
 python3 -m venv venv
 
-# 啟動虛擬環境
+# Activate virtual environment
 # Windows
 venv\Scripts\activate
 # macOS/Linux
 source venv/bin/activate
 ```
 
-### 3. 安裝依賴
+### 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. 配置檔案
+### 4. Configuration Files
 
-1. 配置下載參數 (config.json):
+1. Configure download parameters (config.json):
 ```json
 {
     "download": {
@@ -64,7 +64,7 @@ pip install -r requirements.txt
 }
 ```
 
-2. 準備下載清單 (data.json):
+2. Prepare download list (data.json):
 ```json
 {
     "name": "download_folder_name",
@@ -78,75 +78,75 @@ pip install -r requirements.txt
 }
 ```
 
-### 5. 執行程式
+### 5. Run the Program
 
 ```bash
 python main.py
 ```
 
-## 配置說明
+## Configuration Guide
 
-### config.json 參數
+### config.json Parameters
 
-- `chunk_size`: 下載區塊大小（bytes）
-- `max_retries`: 下載失敗重試次數
-- `retry_delay`: 重試等待時間（秒）
-- `timeout`: 下載超時時間（秒）
-- `max_concurrent`: 最大並發下載數
-- `logging.level`: 日誌級別（INFO/DEBUG/WARNING/ERROR）
-- `logging.file`: 日誌文件名稱
+- `chunk_size`: Download block size (bytes)
+- `max_retries`: Number of download retry attempts
+- `retry_delay`: Wait time between retries (seconds)
+- `timeout`: Download timeout (seconds)
+- `max_concurrent`: Maximum concurrent downloads
+- `logging.level`: Log level (INFO/DEBUG/WARNING/ERROR)
+- `logging.file`: Log file name
 
-### data.json 格式
+### data.json Format
 
-- `name`: 下載文件夾名稱
-- `list`: 下載文件列表
-  - `resource_url`: 文件下載網址
-  - `resource_name`: 文件名稱
-  - `resource_size`: 預期文件大小（MB）
+- `name`: Download folder name
+- `list`: Download file list
+  - `resource_url`: File download URL
+  - `resource_name`: File name
+  - `resource_size`: Expected file size (MB)
 
-## 專案結構
+## Project Structure
 
 ```
 test_download/
-├── config.json         # 配置文件
-├── data.json          # 下載清單
-├── requirements.txt   # 依賴套件
-├── main.py           # 主程式入口
-├── config.py         # 配置管理
-├── logger.py         # 日誌管理
-├── utils.py          # 工具函數
-└── download_manager.py # 下載核心功能
+├── config.json         # Configuration file
+├── data.json          # Download list
+├── requirements.txt   # Dependencies
+├── main.py           # Main program entry
+├── config.py         # Configuration management
+├── logger.py         # Logging management
+├── utils.py          # Utility functions
+└── download_manager.py # Core download functionality
 ```
 
-## 開發說明
+## Development Guide
 
-### 添加新功能
+### Adding New Features
 
-1. 在相應的模組中添加功能
-2. 更新配置文件（如需要）
-3. 更新文檔
+1. Add functionality in the appropriate module
+2. Update configuration files (if needed)
+3. Update documentation
 
-### 代碼風格
+### Code Style
 
-- 遵循 PEP 8 規範
-- 使用類型提示
-- 添加適當的註釋和文檔字符串
+- Follow PEP 8 guidelines
+- Use type hints
+- Add appropriate comments and docstrings
 
-## 常見問題
+## FAQ
 
-1. Q: 下載失敗怎麼辦？
-   A: 程式會自動重試，重試次數可在 config.json 中配置
+1. Q: What to do if download fails?
+   A: The program will automatically retry, retry count can be configured in config.json
 
-2. Q: 如何修改並發數？
-   A: 在 config.json 中修改 max_concurrent 參數
+2. Q: How to modify concurrent downloads?
+   A: Modify the max_concurrent parameter in config.json
 
-3. Q: 下載速度很慢怎麼辦？
-   A: 可以調整 chunk_size 和 max_concurrent 參數
+3. Q: What to do if download speed is slow?
+   A: Adjust chunk_size and max_concurrent parameters
 
-## 貢獻指南
+## Contributing
 
-歡迎提交 Pull Request 或建立 Issue。
+Pull requests and issues are welcome.
 
-## 授權
+## License
 
 MIT License
