@@ -1,0 +1,12 @@
+2025-03-05 22:57:23,430 - downloader - INFO - Starting download process
+2025-03-05 22:57:23,431 - downloader - INFO - Creating directory: 13Pete the Cat
+2025-03-05 22:57:23,619 - downloader - INFO - Successfully downloaded: 13Pete the Cat/Pete the Cat Saves Christmas20.mp3
+2025-03-05 22:57:23,636 - downloader - INFO - Successfully downloaded: 13Pete the Cat/Pete the Cat Saves Christmas21.mp3
+2025-03-05 22:57:23,636 - downloader - INFO - Download complete! Successfully downloaded 2 of 2 files
+2025-03-05 22:57:23,636 - downloader - INFO - Total time: 0.21 seconds
+2025-03-05 23:02:57,628 - downloader - INFO - Starting download process
+2025-03-05 23:02:57,628 - downloader - INFO - Creating directory: 13Pete the Cat
+2025-03-05 23:02:57,780 - downloader - INFO - Successfully downloaded: 13Pete the Cat/Pete the Cat Saves Christmas20.mp3
+2025-03-05 23:02:58,040 - downloader - INFO - Successfully downloaded: 13Pete the Cat/Pete the Cat Saves Christmas21.mp3
+2025-03-05 23:02:58,041 - downloader - INFO - Download complete! Successfully downloaded 2 of 2 files
+2025-03-05 23:02:58,041 - downloader - INFO - Total time: 0.41 seconds
