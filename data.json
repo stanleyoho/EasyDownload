@@ -1,0 +1,32 @@
+{
+    "name": "13Pete the Cat",
+    "page": 1,
+    "next_page": 2,
+    "per_page": 100,
+    "total_page": 2,
+    "total": 133,
+    "list": [
+        {
+            "dir_id": 5716780,
+            "resource_id": 292360175,
+            "resource_url": "https://oss-audio.xiaobien.com/pc_cloud/3641511/audio/1667100637247373949.mp3",
+            "resource_size": 0.77,
+            "resource_duration": 34,
+            "resource_name": "Pete the Cat Saves Christmas21",
+            "oss_check": 0,
+            "created_at": "2022-10-30 11:30:39"
+        },
+        {
+            "dir_id": 5716780,
+            "resource_id": 292360174,
+            "resource_url": "https://oss-audio.xiaobien.com/pc_cloud/3641511/audio/1667100632583971023.mp3",
+            "resource_size": 0.23,
+            "resource_duration": 10,
+            "resource_name": "Pete the Cat Saves Christmas20",
+            "oss_check": 0,
+            "created_at": "2022-10-30 11:30:39"
+        }
+    ],
+    "sorting_type": 0,
+    "sorting": 0
+}

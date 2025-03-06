@@ -1,0 +1,14 @@
+{
+    "download": {
+        "chunk_size": 32768,
+        "max_retries": 3,
+        "retry_delay": 1,
+        "timeout": 300,
+        "max_concurrent": 10
+    },
+    "logging": {
+        "enabled": true,
+        "level": "INFO",
+        "file": "download.log"
+    }
+}
